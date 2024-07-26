@@ -1,5 +1,5 @@
-/* 
-## Objetivo
+
+<!-- ## Objetivo
 
 Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
 
@@ -15,6 +15,38 @@ Se XP for maior ou igual a 10.001 = Radiante
 ## Saída
 
 Ao final deve se exibir uma mensagem:
-"O Herói de nome **{nome}** está no nível de **{nivel}**" */
+"O Herói de nome **{nome}** está no nível de **{nivel}**" -->
 
-import java.util.Scanner;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do felipao</title>
+    <script>
+        var nome = window.prompt("Qual é o nome do Jogador? ") //pegando o nome do jogador
+        var xp = window.prompt ("quantos pontos de experiencia o joador tem?")//pegando os pontos de experiencia
+
+        if (xp <= 1000) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Ferro")
+        }if (xp >= 1001 && xp <= 2000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Bronze")
+        }if (xp >= 2001 && xp <= 5000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Prata")
+        }if (xp >= 5001 && xp <= 7000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Ouro")
+        }if (xp >= 7001 && xp <= 8000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Platina")
+        }if (xp >= 8001 && xp <= 9000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Ascendente")
+        }if (xp >= 9001 && xp <= 10000 ) {
+            window.alert("O heroi de nome " + nome + " esta no nivel Imortal")
+        }if (xp > 10000){
+            window.alert("O heroi de nome " + nome + " esta no nivel Radiante")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
